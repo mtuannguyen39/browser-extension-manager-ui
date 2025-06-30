@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/data.json" />
+    <link rel="stylesheet" href="global.css" />
+
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="light">
+    <div class="container">
+      <div class="header">
+        <div class="logo-section">
+          <div class="logo"></div>
+        </div>
+        <button class="theme-toggle" onClick="toggleMode()">
+          <img src="./assets/images/icon-sun.svg" alt="Light Mode" />
+        </button>
+      </div>
+
+      <h2 class="main-title">Extensions List</h2>
+
+      <div class="filter-tabs">
+        <button class="active filter-tab" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="active">Active</button>
+        <button class="filter-tab" data-filter="inactive">Inactive</button>
+      </div>
+
+      <div class="extensions-grid" id="extensionsGrid">
+        <!-- Extensions will be rendered here -->
+      </div>
+
+      <div class="no-extensions" id="noExtensions" style="display: none">
+        <div class="no-extensions-text">No Extensions found</div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Nguyen Minh Tuan</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
