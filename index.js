@@ -181,18 +181,20 @@ function removeExtension(name) {
 }
 
 //Function Dark/Light Mode
-function toggleMode() {
+function toggleTheme() {
   const body = document.body;
-  const themeToggle = document.querySelector("theme.toggle");
+  const themeToggle = document.querySelector(".theme-toggle");
 
   if (body.classList.contains("light")) {
     body.classList.remove("light");
     body.classList.add("dark");
-    themeToggle.textContent = "./assets/images/icon-sun.svg";
+    themeToggle.innerHTML =
+      '<img src="./assets/images/icon-sun.svg" alt="Dark theme" width="24" height="24"/>';
   } else {
     body.classList.remove("dark");
     body.classList.add("light");
-    themeToggle.textContent = "./assets/images/icon-moon.svg";
+    themeToggle.innerHTML =
+      '<img src="./assets/images/icon-moon.svg" alt="Light theme" width="24" height="24"/>';
   }
 }
 

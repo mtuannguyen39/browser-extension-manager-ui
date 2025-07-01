@@ -28,19 +28,29 @@
     <div class="container">
       <div class="header">
         <div class="logo-section">
-          <div class="logo"></div>
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="Logo Image" />
+          </div>
         </div>
-        <button class="theme-toggle" onClick="toggleMode()">
-          <img src="./assets/images/icon-sun.svg" alt="Light Mode" />
+        <button class="theme-toggle" onClick="toggleTheme()">
+          <!-- ☀️ -->
+          <img
+            src="./assets/images/icon-sun.svg"
+            alt="Theme Toggle"
+            width="24"
+            height="24"
+          />
         </button>
       </div>
 
-      <h2 class="main-title">Extensions List</h2>
+      <div class="main-content">
+        <h2 class="main-title">Extensions List</h2>
 
-      <div class="filter-tabs">
-        <button class="active filter-tab" data-filter="all">All</button>
-        <button class="filter-tab" data-filter="active">Active</button>
-        <button class="filter-tab" data-filter="inactive">Inactive</button>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="active">Active</button>
+          <button class="filter-tab" data-filter="inactive">Inactive</button>
+        </div>
       </div>
 
       <div class="extensions-grid" id="extensionsGrid">
