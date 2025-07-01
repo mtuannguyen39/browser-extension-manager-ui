@@ -431,3 +431,21 @@ body.dark {
 .extension-card:nth-child(9) {
   animation-delay: 0.9s;
 }
+
+/* Responsive styles */
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-title {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .filter-tabs {
+    margin-top: 20px;
+  }
+}
